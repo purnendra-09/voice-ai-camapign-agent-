@@ -1,0 +1,120 @@
+[
+  {
+    "state": "GREETING",
+    "patient_input": "hi",
+    "intent": "GREETING",
+    "action": "INTRODUCE_CAMPAIGN",
+    "next_state": "CAMPAIGN_INTRODUCTION",
+    "response_goal": "Greet and introduce the campaign briefly.",
+    "expected_outcome": "CONTINUE"
+  },
+  {
+    "state": "CAMPAIGN_INTRODUCTION",
+    "patient_input": "cheppandi",
+    "intent": "CONTINUE",
+    "action": "EXPLAIN_CAMPAIGN",
+    "next_state": "INTEREST_CHECK",
+    "response_goal": "Explain the campaign in 2-3 short sentences.",
+    "expected_outcome": "CONTINUE"
+  },
+  {
+    "state": "INTEREST_CHECK",
+    "patient_input": "interest undi",
+    "intent": "INTERESTED",
+    "action": "ACKNOWLEDGE_INTEREST",
+    "next_state": "QUESTION_ANSWERING",
+    "response_goal": "Thank the patient and ask for questions.",
+    "expected_outcome": "INTERESTED"
+  },
+  {
+    "state": "INTEREST_CHECK",
+    "patient_input": "interest ledhu",
+    "intent": "NOT_INTERESTED",
+    "action": "HANDLE_NOT_INTERESTED",
+    "next_state": "FINISHED",
+    "response_goal": "Respect the decision, thank the patient and end.",
+    "expected_outcome": "NOT_INTERESTED"
+  },
+  {
+    "state": "QUESTION_ANSWERING",
+    "patient_input": "venue ekkada",
+    "intent": "ASK_LOCATION",
+    "action": "ANSWER_LOCATION",
+    "next_state": "QUESTION_ANSWERING",
+    "response_goal": "Answer only the venue question.",
+    "expected_outcome": "CONTINUE"
+  },
+  {
+    "state": "QUESTION_ANSWERING",
+    "patient_input": "time enti",
+    "intent": "ASK_TIME",
+    "action": "ANSWER_TIME",
+    "next_state": "QUESTION_ANSWERING",
+    "response_goal": "Answer only the timing question.",
+    "expected_outcome": "CONTINUE"
+  },
+  {
+    "state": "QUESTION_ANSWERING",
+    "patient_input": "doctor untara",
+    "intent": "ASK_DOCTOR",
+    "action": "ANSWER_DOCTOR",
+    "next_state": "QUESTION_ANSWERING",
+    "response_goal": "Answer using hospital context only.",
+    "expected_outcome": "CONTINUE"
+  },
+  {
+    "state": "QUESTION_ANSWERING",
+    "patient_input": "free aa",
+    "intent": "ASK_CAMPAIGN",
+    "action": "ANSWER_CAMPAIGN",
+    "next_state": "QUESTION_ANSWERING",
+    "response_goal": "Explain campaign benefits only.",
+    "expected_outcome": "CONTINUE"
+  },
+  {
+    "state": "QUESTION_ANSWERING",
+    "patient_input": "vastanu",
+    "intent": "CONFIRM_ATTENDANCE",
+    "action": "CONFIRM_ATTENDANCE",
+    "next_state": "CLOSING",
+    "response_goal": "Thank the patient and move to closing.",
+    "expected_outcome": "INTERESTED"
+  },
+  {
+    "state": "ANY",
+    "patient_input": "busy",
+    "intent": "BUSY",
+    "action": "OFFER_CALLBACK",
+    "next_state": "CALLBACK",
+    "response_goal": "Offer callback.",
+    "expected_outcome": "CALLBACK"
+  },
+  {
+    "state": "ANY",
+    "patient_input": "wrong number",
+    "intent": "WRONG_NUMBER",
+    "action": "END_WRONG_NUMBER",
+    "next_state": "FINISHED",
+    "response_goal": "Apologize and end.",
+    "expected_outcome": "WRONG_NUMBER"
+  },
+  {
+    "state": "ANY",
+    "patient_input": "emergency undi",
+    "intent": "EMERGENCY",
+    "action": "HANDLE_EMERGENCY",
+    "next_state": "FINISHED",
+    "response_goal": "Advise emergency care.",
+    "expected_outcome": "EMERGENCY"
+  },
+  {
+    "state": "CLOSING",
+    "patient_input": "ok tq",
+    "intent": "GOODBYE",
+    "action": "CLOSE_CONVERSATION",
+    "next_state": "FINISHED",
+    "response_goal": "Thank patient and close.",
+    "expected_outcome": "COMPLETED"
+  }
+]
+

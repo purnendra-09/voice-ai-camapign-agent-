@@ -1,0 +1,68 @@
+{
+  "apollo_hospital": {
+    "name": "Apollo Hospital Chennai",
+    "location": "Chennai, Tamil Nadu",
+    "phone": "044-28291234",
+    "hours": "9 AM - 9 PM",
+    "specialties": ["General", "Cardiology", "Orthopedics", "Neurology"],
+    "language": "Telugu",
+    "timezone": "IST",
+    "google_sheet_id": "1_C4jx5XFMKErjwnb0ZVKtMakfhnK4wNVAd0v4amsEvo",
+    "prompt_key": "appointment_booking"
+  },
+  "max_hospital": {
+    "name": "Max Hospital Delhi",
+    "location": "New Delhi, India",
+    "phone": "011-40190999",
+    "hours": "8 AM - 10 PM",
+    "specialties": ["General", "Cardiology", "Pediatrics", "Oncology"],
+    "language": "Hindi",
+    "timezone": "IST",
+    "google_sheet_id": "1_C4jx5XFMKErjwnb0ZVKtMakfhnK4wNVAd0v4amsEvo",
+    "prompt_key": "appointment_booking"
+  },
+  "fortis_hospital": {
+    "name": "Fortis Hospital Bangalore",
+    "location": "Bangalore, Karnataka",
+    "phone": "080-67999999",
+    "hours": "9 AM - 8 PM",
+    "specialties": ["General", "Orthopedics", "Neurology", "Urology"],
+    "language": "Kannada",
+    "timezone": "IST",
+    "google_sheet_id": "1_C4jx5XFMKErjwnb0ZVKtMakfhnK4wNVAd0v4amsEvo",
+    "prompt_key": "general_assistance"
+  },
+  "akira_eye_hospital_amalapuram": {
+    "name": "Akira Eye Hospital",
+    "location": "Amalapuram, Andhra Pradesh",
+    "phone": "+91-8856-234567",
+    "hours": "9 AM - 8 PM",
+    "specialties": [
+      "Cataract",
+      "LASIK",
+      "Glaucoma",
+      "Retina",
+      "Pediatric Ophthalmology",
+      "General Eye Exam"
+    ],
+    "language": "Telugu",
+    "timezone": "IST",
+    "google_sheet_id": "YOUR_GOOGLE_SHEET_ID",
+    "prompt_key": "appointment_booking"
+  },
+  "homeo_pills_hospital": {
+    "name": "Homeo Pills Hospital",
+    "location": "Andhra Pradesh",
+    "phone": "TBD",
+    "hours": "9 AM - 8 PM",
+    "specialties": [
+      "Homeopathy",
+      "Free Health Camp",
+      "General Consultation"
+    ],
+    "language": "Telugu",
+    "timezone": "Asia/Kolkata",
+    "google_sheet_id": "1_C4jx5XFMKErjwnb0ZVKtMakfhnK4wNVAd0v4amsEvo",
+    "prompt_key": "homeo_pills_campaign"
+  }
+}

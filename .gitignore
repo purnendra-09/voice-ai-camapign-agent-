@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Frontend
+node_modules/
+dist/
+build/
+.vite/
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+
+# Secrets
+.env
+.env.local
+.env.*.local
+*service-account*.json
+app/credentials/google-service-account.json
+secrets/
+
+# Logs and generated output
+*.log
+output/
+exports/
+recordings/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
